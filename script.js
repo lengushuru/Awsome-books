@@ -4,6 +4,13 @@ const bookTitle = document.getElementById('title');
 const bookAuthor = document.getElementById('author');
 let library = [];
 
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
+
 const addBook = (book, bookNumber) => {
   const bookHtml = document.createElement('div');
   bookHtml.className = 'book';
