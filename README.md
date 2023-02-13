@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Awsome books README file</b></h3>
 
 </div>
 
@@ -60,36 +60,28 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# Awsome Books📖 <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**Awsome Books** is a simple html  and javascript project to help learn javascrip object. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
+- HTML.
+
+- css.
+
+- javaScript.
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://www.javascript.com/">javaScript</a></li>
   </ul>
 </details>
 
@@ -99,9 +91,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Add books to the library**
+- **Remove book from the library**
+- **Display the library**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +103,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://lengushuru.github.io/Awsome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +111,21 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+>To get a local copy up and running, follow these steps.
 
-To get a local copy up and running, follow these steps.
+   1.install git, if you already have git installed skip this step.
+ 
+   2.open command terminal
+ 
+   3.navigate to the directory you want remote directory to be cloned to
+ 
+   4.go to the git hub and copy HTTPS url of the repository
+ 
+   5.clone the repository by typing git clone "HTTPS url copied in step4"
+ 
+   6.Hit enter in the keyboard
+ 
+   7.navigate to the copy of your cloned repository using cd command
 
 ### Prerequisites
 
@@ -134,8 +138,11 @@ Example command:
  gem install rails
 ```
  -->
+- Basic knowdlenge of HTML, CSS, javascript and the code editor of your choice.
+- Basic knowlege of the computer operating system.
 
-### Setup
+
+### Setup <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
@@ -148,22 +155,9 @@ Example commands:
 ```
 --->
 
-### Install
+### Usage <a name="usage"></a>
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
+To run the project, execute the following command: go to your local repository and double click index.html file to open in a bowser. 
 
 <!--
 Example command:
@@ -173,21 +167,10 @@ Example command:
 ```
 --->
 
-### Run tests
 
-To run tests, run the following command:
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
+You can deploy this project using: github pages or any host of your choice
 
 <!--
 Example:
@@ -203,19 +186,19 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Lengushuru Charles**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/lengushuru)
+- Twitter: [@twitterhandle](https://twitter.com/ngushuru)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lengushuru-charles-a09371111/)
 
-👤 **Author2**
+👤 **Lengushuru Charles**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/AmineDerbal)
+- Twitter: [@twitterhandle](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +206,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **responsive for all devices**
+- [ ] **use css to add more asthetics**
+- [ ] **use javascript class**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +228,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+
+If you like this project please give it a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +238,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+
+I would like to thank microverse for the oportunity to learn how to set up this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,15 +248,15 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **how will i setup this project in local machine**
 
-  - [Answer_1]
+  - run the following command in the terminal: git clone https://github.com/lengushuru/awsome-books.git
 
-- **[Question_2]**
 
-  - [Answer_2]
+- **which code editor should i use**
+
+  - You can use any editor of your choice but i recommend vs code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,8 +264,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
