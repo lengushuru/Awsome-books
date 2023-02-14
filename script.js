@@ -17,11 +17,6 @@ class Book {
   }
 
   remove() {
-    console.log(library);
-    library.splice(this.index, 1);
-    localStorage.setItem('booksData', JSON.stringify(library));
-  }
-  delete() {
     library.splice(this.index, 1);
     localStorage.setItem('booksData', JSON.stringify(library));
   }
@@ -39,10 +34,9 @@ const addBook = (book, bookNumber) => {
   return bookHtml;
 };
 
-const removeBook = (bookIndex) => {
-  console.log('index', bookIndex.index);
-  bookIndex.delete();
-}
+const removeBook = (book) => {
+  book.remove();
+};
 
 const displayLibrary = (library) => {
   books.innerHTML = '';
@@ -53,16 +47,26 @@ const displayLibrary = (library) => {
   removeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
       const index = event.target.dataset.bookIndex;
-      console.log('library', library[index]);
       removeBook(library[index]);
-
-      displayLibrary();
+      displayLibrary(library);
     });
   });
 };
 
+const turnLibraryDataIntoBooks = (library) => {
+  const newLibrary = [];
+  for (let i = 0; i < library.length; i += 1) {
+    const { title } = library[i];
+    const { author } = library[i];
+    const { index } = library[i];
+    newLibrary.push(new Book(title, author, index));
+  }
+  return newLibrary;
+};
+
 if (localStorage.getItem('booksData')) {
   library = JSON.parse(localStorage.getItem('booksData'));
+  library = turnLibraryDataIntoBooks(library);
   displayLibrary(library);
 }
 
