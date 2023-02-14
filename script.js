@@ -5,9 +5,10 @@ const bookAuthor = document.getElementById('author');
 let library = [];
 
 class Book {
-  constructor(title, author) {
+  constructor(title, author, index = null) {
     this.title = title;
     this.author = author;
+    this.index = index;
   }
 
   add() {
@@ -16,9 +17,13 @@ class Book {
   }
 
   remove() {
+    console.log(library);
     library.splice(this.index, 1);
     localStorage.setItem('booksData', JSON.stringify(library));
-    return library;
+  }
+  delete() {
+    library.splice(this.index, 1);
+    localStorage.setItem('booksData', JSON.stringify(library));
   }
 }
 
@@ -26,15 +31,18 @@ const addBook = (book, bookNumber) => {
   book.index = bookNumber;
   const bookHtml = document.createElement('div');
   bookHtml.className = 'book';
+  if (bookNumber % 2 === 0) {
+    bookHtml.classList.add('gray-background');
+  }
   bookHtml.innerHTML = `<p class = "book-title"> ${book.title} By ${book.author} </p>
  <button class="book-remove" data-book-index=${bookNumber}> remove</button>  `;
   return bookHtml;
 };
 
-const removeBook = (event) => {
-  const index = event.target.dataset.bookIndex;
-  return library[index].remove();
-};
+const removeBook = (bookIndex) => {
+  console.log('index', bookIndex.index);
+  bookIndex.delete();
+}
 
 const displayLibrary = (library) => {
   books.innerHTML = '';
@@ -44,7 +52,11 @@ const displayLibrary = (library) => {
   const removeButtons = document.querySelectorAll('.book-remove');
   removeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      displayLibrary(removeBook(event));
+      const index = event.target.dataset.bookIndex;
+      console.log('library', library[index]);
+      removeBook(library[index]);
+
+      displayLibrary();
     });
   });
 };
