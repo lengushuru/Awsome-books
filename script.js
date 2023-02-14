@@ -9,9 +9,21 @@ class Book {
     this.title = title;
     this.author = author;
   }
+
+  add() {
+    library.push(this);
+    localStorage.setItem('booksData', JSON.stringify(library));
+  }
+
+  remove() {
+    library.splice(this.index, 1);
+    localStorage.setItem('booksData', JSON.stringify(library));
+    return library;
+  }
 }
 
 const addBook = (book, bookNumber) => {
+  book.index = bookNumber;
   const bookHtml = document.createElement('div');
   bookHtml.className = 'book';
   bookHtml.innerHTML = `<p class = "book-title"> ${book.title} </p>
@@ -22,9 +34,7 @@ const addBook = (book, bookNumber) => {
 
 const removeBook = (event) => {
   const index = event.target.dataset.bookIndex;
-  library.splice(index, 1);
-  localStorage.setItem('booksData', JSON.stringify(library));
-  return library;
+  return library[index].remove();
 };
 
 const displayLibrary = (library) => {
@@ -47,12 +57,8 @@ if (localStorage.getItem('booksData')) {
 
 addBookButton.addEventListener('click', () => {
   if (bookTitle.value !== '' && bookAuthor.value !== '') {
-    const bookData = {
-      title: bookTitle.value,
-      author: bookAuthor.value,
-    };
-    library.push(bookData);
-    localStorage.setItem('booksData', JSON.stringify(library));
+    const book = new Book(bookTitle.value, bookAuthor.value);
+    book.add();
     displayLibrary(library);
     bookTitle.value = '';
     bookAuthor.value = '';
