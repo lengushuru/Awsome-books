@@ -1,11 +1,69 @@
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-input {
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  border: 1px solid black;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.book * {
   margin: 10px;
 }
 
-h1 {
+.book-remove {
+  height: 30px;
+}
+
+.gray-background {
+  background-color: lightgray;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form div {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  margin: 5px;
+}
+
+h1,
+h2 {
   text-align: center;
+}
+
+input[type="submit"] {
+  width: 15%;
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.button-submit {
+  display: flex;
+  flex-direction: row-reverse;
 }
