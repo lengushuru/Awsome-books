@@ -19,18 +19,18 @@ body {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  
 }
+
 .book * {
   margin: 10px;
- 
 }
 
 .book-remove {
   height: 30px;
 }
+
 .gray-background {
-background-color: lightgray;
+  background-color: lightgray;
 }
 
 form {
@@ -38,10 +38,11 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
- width: 50%;
- margin-left: auto;
- margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 form div {
   width: 50%;
 }
@@ -49,18 +50,19 @@ form div {
 input {
   width: 100%;
   margin: 5px;
- 
 }
 
-h1,h2 {
+h1,
+h2 {
   text-align: center;
 }
- 
+
 input[type="submit"] {
   width: 15%;
   margin: 5px 0 5px 0;
   padding: 0;
 }
+
 .button-submit {
   display: flex;
   flex-direction: row-reverse;
