@@ -26,8 +26,7 @@ const addBook = (book, bookNumber) => {
   book.index = bookNumber;
   const bookHtml = document.createElement('div');
   bookHtml.className = 'book';
-  bookHtml.innerHTML = `<p class = "book-title"> ${book.title} </p>
- <p class="book-author">${book.author} </p>
+  bookHtml.innerHTML = `<p class = "book-title"> ${book.title} By ${book.author} </p>
  <button class="book-remove" data-book-index=${bookNumber}> remove</button>  `;
   return bookHtml;
 };
