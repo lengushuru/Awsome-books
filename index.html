@@ -8,18 +8,46 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <h1>Awsome Books</h1>
-  <div class="books">
-  </div>
-  <h2>Add Book</h2>
-  <form>
-    <div><input type="text" id="title" required placeholder="title" name="title"><br></div>
-    <div><input type="text" id="author" required placeholder="author" name="author"><br></div>
-    <div class="button-submit"><input type="submit" id ="submit" value="Add"></div>
-    
-    
-    
-  </form>
+  <header>
+    <nav>
+      <a class="krevon-font" href="./index.html">Awsome Books</a>
+      <ul class="arvo-font">
+        <li><a id="list-link" class="active" href="#">List</a></li>
+        <p>|</p>
+        <li><a id="add-link" href="#">Add new</a></li>
+        <p>|</p>
+        <li><a id="contact-link" href="#
+          ">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p class="time arvo-font"></p>
+  <section id="list">
+    <h1 class="krevon-font big-title">Awsome Books</h1>
+  <div class="books"></div>
+  </section>
+  <section id ='add-form' class="hide">
+    <h2 class="krevon-font big-title">Add new Book</h2>
+    <form>
+      <div><input type="text" id="title" required placeholder="title" name="title"><br></div>
+      <div><input type="text" id="author" required placeholder="author" name="author"><br></div>
+      <div class="button-submit"><input type="submit" id ="submit" value="Add"></div>
+    </form>
+  </section>
+  <section id="contact" class="hide">
+    <div id="contact-container">
+      <h2 class="krevon-font big-title">Contact information</h2>
+      <p class="arvo-font">Do you have any question or you just want to say "hello"?<br>you can reach out to us!</p>
+      <ul class="arvo-font">
+        <li>Our email address: <a href="">mail@mail.com</a> </li>
+        <li>Our phone number: 903-327-8039 </li>
+        <li>Our Address: 3594 Pickens Way Denison Texas </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+      <p class="arvo-font">Awesome books &copy; 2021</p>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>
