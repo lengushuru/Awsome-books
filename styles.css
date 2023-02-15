@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Kreon:wght@600&display=swap');
+:root {
+--kreon-font : 'Kreon', serif;
+--arvo-font : 'Arvo', serif;
+}
+.krevon-font {
+  font-family: var(--kreon-font);
+  font-size: 1.5rem;
+}
+
+.arvo-font {
+  font-family: var(--arvo-font);
+}
+
 body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +27,7 @@ nav {
   align-items: center;
   background-color: #333;
   color: white;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 nav ul {
@@ -29,11 +44,28 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #ff0000;
+}
+
+.active {
+  color: #ff0000;
+}
+
 nav p {
   margin: 0;
   }
 
-#contact {
+  .hide {
+  display: none;
+}
+
+.time{
+text-align: end;
+margin: 1rem;
+}
+
+#contact-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,11 +73,16 @@ nav p {
 
 }
 
-.hide {
-  display: none;
+#contact-container ul {
+margin-left:0 ;
+padding-left: 0;
 }
 
+
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   background-color: #333;
@@ -111,12 +148,16 @@ h2 {
 }
 
 input[type="submit"] {
-  width: 15%;
+  width: fit-content;
   margin: 5px 0 5px 0;
-  padding: 0;
+  padding: 3px;
 }
 
 .button-submit {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.big-title {
+  font-size: 2.5rem;
 }
