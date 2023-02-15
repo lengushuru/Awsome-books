@@ -10,24 +10,24 @@
 <body>
   <header>
     <nav>
-      <a href="./index.html">Awsome Books</a>
-      <ul>
-        <li><a href="#">List</a></li>
+      <a class="krevon-font" href="./index.html">Awsome Books</a>
+      <ul class="arvo-font">
+        <li><a id="list-link" class="active" href="#">List</a></li>
         <p>|</p>
-        <li><a href="#">Add new</a></li>
+        <li><a id="add-link" href="#">Add new</a></li>
         <p>|</p>
-        <li><a href="#
+        <li><a id="contact-link" href="#
           ">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <p class="time"></p>
+  <p class="time arvo-font"></p>
   <section id="list">
-    <h1>Awsome Books</h1>
+    <h1 class="krevon-font big-title">Awsome Books</h1>
   <div class="books"></div>
   </section>
-  <section id = 'add-form'>
-    <h2>Add new Book</h2>
+  <section id ='add-form' class="hide">
+    <h2 class="krevon-font big-title">Add new Book</h2>
     <form>
       <div><input type="text" id="title" required placeholder="title" name="title"><br></div>
       <div><input type="text" id="author" required placeholder="author" name="author"><br></div>
@@ -35,16 +35,18 @@
     </form>
   </section>
   <section id="contact" class="hide">
-    <h2>Contact information</h2>
-    <p>Do you have any question or you just want to say "hello"?<br>you can reachout to us!</p>
-    <ul>
-      <li>our email</li>
-      <li>our mobile </li>
-      <li>our Address</li>
-    </ul>
+    <div id="contact-container">
+      <h2 class="krevon-font big-title">Contact information</h2>
+      <p class="arvo-font">Do you have any question or you just want to say "hello"?<br>you can reach out to us!</p>
+      <ul class="arvo-font">
+        <li>Our email address: <a href="">mail@mail.com</a> </li>
+        <li>Our phone number: 903-327-8039 </li>
+        <li>Our Address: 3594 Pickens Way Denison Texas </li>
+      </ul>
+    </div>
   </section>
   <footer>
-    <p>Awesome books &copy; 2021</p>
+      <p class="arvo-font">Awesome books &copy; 2021</p>
   </footer>
   <script src="./script.js"></script>
 </body>
