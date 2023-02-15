@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Kreon:wght@600&display=swap');
+
 :root {
---kreon-font : 'Kreon', serif;
---arvo-font : 'Arvo', serif;
+  --kreon-font: 'Kreon', serif;
+  --arvo-font: 'Arvo', serif;
 }
+
 .krevon-font {
   font-family: var(--kreon-font);
   font-size: 1.5rem;
@@ -45,39 +47,37 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff0000;
+  color: #f00;
 }
 
 .active {
-  color: #ff0000;
+  color: #f00;
 }
 
 nav p {
   margin: 0;
-  }
+}
 
-  .hide {
+.hide {
   display: none;
 }
 
-.time{
-text-align: end;
-margin: 1rem;
+.time {
+  text-align: end;
+  margin: 1rem;
 }
 
-#contact-container{
+#contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-
 }
 
 #contact-container ul {
-margin-left:0 ;
-padding-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
-
 
 footer {
   position: absolute;
